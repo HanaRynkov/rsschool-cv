@@ -4,12 +4,11 @@
 - Address: Israel, Harish, Savion str 34/ 7
 - Phone: +972537171864 
 - E-mail: masakovska@gmail.com
-- [LinkedIn:](hanarynkov)
-- [GitHub:](HanaRynkov)
+- LinkedIn: [hanarynkov](https://www.linkedin.com/in/hanarynkov)
+- GitHub: [HanaRynkov](https://github.com/HanaRynkov)
 
 # Summary
-I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills.
-I am reliable and dependable and often seek new responsibilities within a wide range of employment areas.
+I am a front-end developer, I like to work with beautiful designs, I like to write code and listen to music that helps to focus on the task. I am at the stage of learning JavaScript and React and want to finally start working on a new project
 
 # Skills
 - HTML
