@@ -42,6 +42,6 @@ Web developer
 JS / FRONT-END  
 2021
 # Languages
-Russian - native speaker.  
-English - A2   
+Russian - native speaker  
+English  
 Hebrew
