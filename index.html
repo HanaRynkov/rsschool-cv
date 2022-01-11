@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="/foto_nav.png"></a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li>
+                    <select name="lang" id="lang">
+                        <option value="/">Русский</option>
+                        <option class="eng" value="/en/main">English</option>
+                    </select>
+
+                    <script>
+                        $(document).ready(function () {
+                            var lang = document.getElementById("lang");
+                            lang.onchange = function () {
+                                window.location =
+                                    "https://studyintomsk.ru" +
+                                    lang.options[lang.options.selectedIndex].value;
+                            };
+                        });
+                    </script>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="background">
+            <img src="/desktop.jpeg">
+            <h1>Alexa Rice</h1>
+            <h2>Save sincere emotions, romantic feelings and happy moments of life together with professional
+                photographer Alexa Rise</h2>
+            <button>Hire me</button>
+
+        </section>
+        <section>
+            <h2>Scills</h2>
+            <div class="card">
+                <img src="/card1.png" alt="#" style="width:20%">
+                <div class="container">
+                    <h4><b>
+                            Digital photography
+
+                        </b></h4>
+                    <p>High-quality photos in the studio and on the nature</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="/card1.png" alt="#" style="width:20%">
+                <div class="container">
+                    <h4><b>
+                            Digital photography
+
+                        </b></h4>
+                    <p>High-quality photos in the studio and on the nature</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="/card2.png" alt="#" style="width:20%">
+                <div class="container">
+                    <h4><b>
+                            Video shooting
+
+                        </b></h4>
+                    <p>
+                        Capture your moments so that they always stay with you
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="/card3.png" alt="#" style="width:20%">
+                <div class="container">
+                    <h4><b>
+                            Retouch
+
+                        </b></h4>
+                    <p>I strive to make photography surpass reality</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="/card4.png" alt="#" style="width:20%">
+                <div class="container">
+                    <h4><b>
+                            Audio
+
+                        </b></h4>
+                    <p>Professional sounds recording for video, advertising, portfolio</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <h2>Portfolio</h2>
+        <div class='filter'>
+            <button class='#'>Winter</button>
+            <button class='#'>Spring</button>
+            <button class='#'>Summer</button>
+            <button class='#'>Autumn</button>
+        </div>
+        <div>
+            <p>
+                <img src="/portfolio-img1.png" alt="#" width="120" height="120">
+                <img src="/portfolio-img2.png" alt="#" width="120" height="120">
+                <img src="/portfolio-img3.png" alt=#" width="120" height="120">
+                <img src="/portfolio-img4.png" alt="#" width="120" height="120">
+                <img src="/portfolio-img5.png" alt="#" width="120" height="120">
+                <img src="/portfolio-img6.png" alt="#" width="120" height="120">
+            </p>
+        </div>
+    </section>
+    <section>
+        <h2>Video</h2>
+        <img src="/video-player.png" alt="#">
+
+    </section>
+    <section>
+        <h2>Price</h2>
+        <div class="card">
+            <p>Standart</p>
+            <p>500$</p>
+            <p>One location
+                120 photos in color
+                12 photos in retouch
+                Readiness 2-3 weeks
+                Make up, visage</p>
+            <div class="button">
+                <button type="button"> Order shooting</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Premium</p>
+            <p>700$</p>
+            <p>One or two locations
+                200 photos in color
+                20 photos in retouch
+                Readiness 1-2 weeks
+                Make up, visage</p>
+            <div class="button">
+                <button type="button"> Order shooting</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Gold</p>
+            <p>1000$</p>
+            <p>Three locations or more
+                300 photos in color
+                50 photos in retouch
+                Readiness 1 week
+                Make up, visage, hairstyle</p>
+            <div class="button">
+                <button type="button"> Order shooting</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Contact me</h2>
+        <img src="/contacts.jpeg" alt="#" style="width:100%">
+        <input type="email">
+        <input type="tel">
+        <input type="Message">
+        <button>Send message</button>
+    </section>
+    <footer>
+        <a href="">
+            <img src="/©.png" alt="">
+            <img src="/2022.png" alt="">
+            <img src="/github.png" alt="">
+            <img src="/insta.png" alt="">
+            <img src="/fb.png" alt="">
+            <img src="/twitter.png" alt="">
+            <img src="/p.png" alt="">
+          </a>
+    </footer>
+
+</html>
