@@ -1,15 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div, header, main, section, footer, nav, ul, li {
+    box-sizing: border-box;
+}
+
+/* STYLE GUIDE */
+
+:root {
+    --gold: #BDAE82;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 120px;
+    font-family: Merriweather;
+    font-weight: 700;
+}
+
+p {
+    font-family: Inter;
+}
+
+a, a:visited {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+.button {
+    font-size: 20px;
+    padding: 8px 72px;
+    border: 1px solid transparent;
+    /* TODO do not forget to change padding horizontal */
+}
+
+.filled-button {
+    background-color: var(--gold);
+    color: #000;
+}
+
+.filled-button:hover {
+    color: #fff;
+}
+
+.filled-button:active {
+    background-color: #8f815a;
+}
+
+.outline-button {
+    background-color: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.outline-button:hover {
+    color: #fff;
+}
+
+.outline-button:active {
+    background-color: #8f815a;
+    color: #fff;
+}
+
+/* END STYLE GUIDE */
+
+/* CONTAINERS*/
+
+.all_portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background: url('/img/desktop.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px 0 20px;
+}
+
+.logo>svg {
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo:hover>svg path {
+    fill: var(--gold);
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.navigation ul li a {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+.en {
+    position: relative;
+}
+
+.en:after {
+    content: "/";
+    font-size: 20px;
+    line-height: 50px;
+    position: absolute;
+    margin-left: 16px;
+}
+
+/* END HEADER */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 80px;
+    margin-top: 14%;
+}
+
+.hero-text {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.top_left {
+    position: absolute;
+    height: 120px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color: #FFFFFF;
+}
+
+.top_center {
+
+    position: absolute;
+    height: 120px;
+    left: 0%;
+    right: 6%;
+    top: 130px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.start {
+    display: inline-block;
+    position: relative;
+    Width: 220px;
+    height: 55px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #BDAE82;
+    border-radius: 0px;
+}
+
+
+.skills {
+    display: flex;
+    position: relative;
+
+    width: 1440px;
+    height: 1500px;
+    left: 0px;
+    top: 1392px;
+}
+
+.skills_top {
+
+    width: 112px;
+    height: 80px;
+    left: calc(50% - 112px/2);
+    top: 0px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: #BDAE82;
+}
+
+
+
 .card {
-   
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-
-.container {
-    padding: 2px 16px;
+    display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
