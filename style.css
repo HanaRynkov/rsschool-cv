@@ -232,32 +232,80 @@ a:hover {
 .skills {
     display: flex;
     position: relative;
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 1440px;
-    height: 1500px;
+    height: 482px;
     left: 0px;
-    top: 1392px;
 }
 
 .skills_top {
-
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    text-align: center;
     width: 112px;
     height: 80px;
-    left: calc(50% - 112px/2);
-    top: 0px;
     font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
     font-size: 40px;
     line-height: 80px;
-    text-align: center;
+  padding: 20px 100px;
     color: #BDAE82;
+   
 }
-
 
 
 .card {
-    display: inline-block;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 148px;
+    height: 233px;
 }
+
+.skills_text {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    font-family: Inter;
+    width: 280px;
+    height: 40px;
+
+
+}
+
+.text_s {
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    Font family: Inter;
+    width: 280px;
+    height: 72px;
+    left: 20px;
+}
+
+.img_card_1 {
+    width: 60px;
+    height: 60px;
+    top:-0,03px; 
+}
+
+.img_card_2 {
+    width: 60px;
+    height: 50px;
+    top:-0,03px; 
+}
+
+.img_card_3 {
+    width: 67px;
+    height: 50px;
+    top:-0,03px; 
+}
+
+.img_card_4 {
+    width: 60px;
+    height: 30px;
+    top:-0,03px; 
