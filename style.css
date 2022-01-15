@@ -51,7 +51,7 @@ a:hover {
 
 .button {
     font-size: 20px;
-    padding: 8px 72px;
+    padding: 16px 64px;
     border: 1px solid transparent;
     /* TODO do not forget to change padding horizontal */
 }
@@ -85,6 +85,29 @@ a:hover {
 }
 
 /* END STYLE GUIDE */
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 46px;
+}
+
+.horizontal-divider {
+    width: 200px;
+    height: 0px;
+    border: 1px solid var(--gold);
+    margin: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 700;
+    color: var(--gold);
+}
 
 /* CONTAINERS*/
 
@@ -187,125 +210,173 @@ a:hover {
     margin-bottom: 24px;
 }
 
-.top_left {
-    position: absolute;
-    height: 120px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 120px;
-    color: #FFFFFF;
-}
-
-.top_center {
-
-    position: absolute;
-    height: 120px;
-    left: 0%;
-    right: 6%;
-    top: 130px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    color: #FFFFFF;
-}
-
-.start {
-    display: inline-block;
-    position: relative;
-    Width: 220px;
-    height: 55px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    background: #BDAE82;
-    border-radius: 0px;
-}
-
-
 .skills {
     display: flex;
-    position: relative;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 1440px;
-    height: 482px;
-    left: 0px;
+    justify-content: center;
+    width: 100%;
+    padding: 0 40px;
+    margin: 40px 0;
 }
 
-.skills_top {
+
+
+.skills-cards {
     display: flex;
-    position: relative;
     flex-direction: row;
-    text-align: center;
-    width: 112px;
-    height: 80px;
-    font-family: Merriweather;
-    font-size: 40px;
-    line-height: 80px;
-  padding: 20px 100px;
-    color: #BDAE82;
-   
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
 }
 
 
 .card {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 148px;
-    height: 233px;
+    justify-content: center;
+    width: 25%;
 }
 
-.skills_text {
+.card-icon {
+    height: 50px;
+    width: auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-title {
     font-size: 20px;
-    line-height: 40px;
     color: #fff;
-    font-family: Inter;
-    width: 280px;
-    height: 40px;
-
-
+    font-weight: 700;
+    line-height: 40px;
+    margin: 40px 0 20px;
+    text-align: center;
 }
 
-.text_s {
+.card-text {
     font-size: 18px;
     line-height: 36px;
-    color: #FFFFFF;
-    Font family: Inter;
-    width: 280px;
-    height: 72px;
-    left: 20px;
+    color: #fff;
+    text-align: center;
 }
 
-.img_card_1 {
-    width: 60px;
-    height: 60px;
-    top:-0,03px; 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px 0;
 }
 
-.img_card_2 {
-    width: 60px;
-    height: 50px;
-    top:-0,03px; 
+.portfolio-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
 }
 
-.img_card_3 {
-    width: 67px;
-    height: 50px;
-    top:-0,03px; 
+.galery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 25px;
 }
 
-.img_card_4 {
-    width: 60px;
-    height: 30px;
-    top:-0,03px; 
+.galery>img {
+    width: 31%;
+    height: auto;
+
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px 0;
+}
+
+.video_player {
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+
+.video_img {
+    width: 100%;
+    height: auto;
+}
+.video_button {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: calc(50% - 65px);
+    top: calc(50% - 65px);
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px 0;
+
+}
+
+.card_price {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 25px;
+    width: 31%;
+    height: auto;
+    border: 1px solid var(--gold);
+}
+
+.card_price_title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 450;
+    line-height: 40px;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.card_price_text {
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card_price_price {
+    font-size: 24px;
+    line-height: 48px;
+    color: var(--gold);
+    margin: 20px 0 20px;
+    text-align: center;
+}
