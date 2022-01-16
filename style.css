@@ -407,7 +407,7 @@ a:hover {
 }
 
 .contact_title {
-  
+
     text-align: start;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 40px;
@@ -452,6 +452,7 @@ input::placeholder {
     border: 2px solid var(--gold);
     margin: 24px 0;
 }
+
 .contact_message::placeholder {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -475,4 +476,31 @@ input::placeholder {
     align-items: flex-start;
     justify-content: flex-end;
     min-width: 350px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px;
+
+}
+
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.footer_center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+
 }
