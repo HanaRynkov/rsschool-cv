@@ -126,7 +126,7 @@ a:hover {
     justify-content: flex-start;
     width: 100%;
     height: 100vh;
-    background: url('/img/header.jpeg');
+    background: url('./img/header.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -400,7 +400,7 @@ a:hover {
     justify-content: flex-start;
     width: 100%;
     height: 100vh;
-    background: url('/img/contact.jpeg');
+    background: url('./img/contact.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 20px;
@@ -502,5 +502,4 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
     color:white;
-
 }
