@@ -482,7 +482,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 50px;
 
 }
@@ -501,5 +501,14 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color:white;
+    color: white;
+}
+
+.icons_footer {
+    color: white;
+}
+.footer_left{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
