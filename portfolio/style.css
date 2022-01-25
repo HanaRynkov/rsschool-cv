@@ -95,7 +95,7 @@ a:hover {
 
 .horizontal-divider {
     width: 200px;
-    height: 0px;
+    height: 0;
     border: 1px solid var(--gold);
     margin: 0 40px;
 }
@@ -399,11 +399,30 @@ a:hover {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: url('./img/contact.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 60px 20px;
+}
+
+.contact_table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 60px 40px;
+    min-width: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-width: 350px;
 }
 
 .contact_title {
@@ -460,29 +479,12 @@ input::placeholder {
     color: var(--gold);
 }
 
-.contact_table {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 60px 40px;
-    min-width: 400px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    min-width: 350px;
-}
-
 .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 50px;
 
 }
@@ -497,18 +499,201 @@ input::placeholder {
     padding: 0 16px;
 }
 
-.footer_center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-}
-
 .icons_footer {
     color: white;
 }
-.footer_left{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding: 30px 64px 0 60px;
+    }
+
+    .all_portfolio {
+        max-width: 768px;
+    }
+
+    .hero {
+        height: 50vh;
+
+    }
+
+    h1, h2, h3 {
+        font-size: 32px;
+    }
+
+    .hero-content {
+        padding-left: 60px;
+        margin-top: 8%;
+    }
+
+    .hero-text {
+        line-height: 24px;
+    }
+
+    .navigation>ul {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger>img {
+        width: 50px;
+        height: 28px;
+    }
+
+
+    .horizontal-divider {
+        width: 136px;
+    }
+
+    .skills {
+        margin: 136px 0;
+    }
+
+    .skills-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 12px);
+    }
+
+    .portfolio {
+        width: 100%;
+    }
+
+    .price {
+        flex-direction: column;
+    }
+
+    .portfolio-button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 160px;
+    }
+
+    .portfolio-button-container>.button {
+        width: calc(50% - 2.5px);
+    }
+
+    .galery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .galery>img {
+        width: 450px;
+        height: auto;
+        /* padding: 5px 50px; */
+    }
+
+    .video {
+        padding: 0px;
+    }
+
+    .video_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .card_price {
+        width: 420px;
+
+    }
+
+
+    .contact {
+        width: 100%;
+        height: 50vh;
+        padding: 0;
+    }
+
+
+    .contact_table {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        align-items: center;
+        justify-content: center;
+    }
+
+    input, .contact_message {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    .contact_title {
+        font-size: 32px;
+        padding: 20px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .footer ul {
+        margin-top: 24px;
+    }
+
+    .footer > a {
+        margin-top: 24px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio-button-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .portfolio-button-container>.button {
+        width: 80%;
+    }
+
+    .galery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .galery>img {
+        width: 90%;
+        height: auto;
+        /* padding: 5px 50px; */
+    }
+
+    .horizontal-divider {
+        width: 40px;
+        max-width: 180px;
+    }
 }
